@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Bloco Carnaval</title>
+    <!-- LINK ICONS -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- LINK FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__center">
+        <div class="header__content">
+          <span class="header__find--block">find your block</span>
+          <h1 class="header__text">
+            Encontre os <span>melhores blocos </span><br />de carnaval de 2023
+          </h1>
+        </div>
+        <div class="header__search">
+          <div class="header__search__block">
+            <div class="header__input1">
+              <input
+                type="text"
+                name="text"
+                placeholder="Pesquise por nome"
+                autocomplete="off"
+              />
+              <i class="ph-magnifying-glass"></i>
+            </div>
+            <div class="header__input2">
+              <input
+                list="city-carnaval"
+                name="city-carnaval"
+                id="citycarnaval"
+                placeholder="Selecione uma cidade"
+              />
+              <i class="ph-map-pin"></i>
+            </div>
+            <a href="#" class="btn-bgColor">buscar agora</a>
+          </div>
+          <datalist id="city-carnaval">
+            <option value="SP"></option>
+            <option value="JP"></option>
+            <option value="CG"></option>
+            <option value="PE"></option>
+            <option value="RJ"></option>
+          </datalist>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section__blocks">
+          <h2 class="section__text">Blocos recomendados</h2>
+          <div class="section__btns">
+            <a href="#" class="btn-bgColor">lista</a>
+            <a href="#" class="btn-normal">mapa</a>
+          </div>
+        </div>
+        <div class="section__cards">
+          <article class="section__card">
+            <img src="assets/img/foto-1.jpg" alt="" />
+            <div class="section__card__infos">
+              <h3 class="section__subtitle">O Python do vovô não sobe mais</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <address class="section__local">
+                <i class="ph-map-pin"></i>
+                <p>São Paulo - SP</p>
+              </address>
+            </div>
+          </article>
+
+          <article class="section__card">
+            <img src="assets/img/foto-2.jpg" alt="" />
+            <div class="section__card__infos">
+              <h3 class="section__subtitle">Todo mundo null</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <address class="section__local">
+                <i class="ph-map-pin"></i>
+                <p>Florianópolis - SC</p>
+              </address>
+            </div>
+          </article>
+
+          <article class="section__card">
+            <img src="assets/img/foto-3.jpg" alt="" />
+            <div class="section__card__infos">
+              <h3 class="section__subtitle">Hoje dou exception</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <address class="section__local">
+                <i class="ph-map-pin"></i>
+                <p>Curitiba - PR</p>
+              </address>
+            </div>
+          </article>
+
+          <article class="section__card">
+            <img src="assets/img/foto-4.jpg" alt="" />
+            <div class="section__card__infos">
+              <h3 class="section__subtitle">Manda Node</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <address class="section__local">
+                <i class="ph-map-pin"></i>
+                <p>Salvador - BA</p>
+              </address>
+            </div>
+          </article>
+
+          <article class="section__card">
+            <img src="assets/img/foto-5.jpg" alt="" />
+            <div class="section__card__infos">
+              <h3 class="section__subtitle">Só no back-end</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <address class="section__local">
+                <i class="ph-map-pin"></i>
+                <p>São Paulo - SP</p>
+              </address>
+            </div>
+          </article>
+
+          <article class="section__card">
+            <img src="assets/img/foto-6.jpg" alt="" />
+            <div class="section__card__infos">
+              <h3 class="section__subtitle">Esse anel não é de Ruby</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <address class="section__local">
+                <i class="ph-map-pin"></i>
+                <p>Rio de Janeiro - RJ</p>
+              </address>
+            </div>
+          </article>
+
+          <article class="section__card">
+            <img src="assets/img/foto-7.jpg" alt="" />
+            <div class="section__card__infos">
+              <h3 class="section__subtitle">
+                Pimenta no C# dos outros é refresco
+              </h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <address class="section__local">
+                <i class="ph-map-pin"></i>
+                <p>Porto Alegre - RS</p>
+              </address>
+            </div>
+          </article>
+
+          <article class="section__card">
+            <img src="assets/img/foto-8.jpg" alt="" />
+            <div class="section__card__infos">
+              <h3 class="section__subtitle">EnCACHE aqui</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <address class="section__local">
+                <i class="ph-map-pin"></i>
+                <p>São Paulo - SP</p>
+              </address>
+            </div>
+          </article>
+
+          <article class="section__card">
+            <img src="assets/img/foto-9.jpg" alt="" />
+            <div class="section__card__infos">
+              <h3 class="section__subtitle">Não valho nada mas JAVA li</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint.
+              </p>
+              <address class="section__local">
+                <i class="ph-map-pin"></i>
+                <p>São Paulo - SP</p>
+              </address>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

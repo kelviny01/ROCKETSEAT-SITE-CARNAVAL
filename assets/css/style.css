@@ -1,0 +1,225 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* VARIAVEIS */
+
+:root {
+  --font-family: "Roboto", sans-serif;
+
+  --fs-14: 1.4rem;
+  --fs-16: 1.6rem;
+  --fs-20: 2rem;
+  --fs-32: 3.2rem;
+  --fs-48: 4.8rem;
+
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  --text-color-default: #fff;
+  --text-color-primary: #121214;
+  --text-color-secondary: #6246ea;
+  --text-color-tertiary: #7c7c8a;
+  --text-color-span: #e45858;
+
+  --bg-colorBox-input: #eaeaea;
+  --bg-color-header: #f8f8ff;
+}
+
+/* CLASSES UTILITARIAS */
+
+.btn-normal {
+  text-transform: uppercase;
+  color: var(--text-color-secondary);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-700);
+}
+
+.btn-bgColor {
+  background-color: var(--text-color-secondary);
+  border-radius: 0.5rem;
+  color: var(--text-color-default);
+  padding: 1.2rem 3.2rem;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-14);
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+/* ESTILOS GENERICOS */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+}
+
+/* HEADER */
+
+.header {
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--bg-color-header);
+  background: url(../img/ilustra-01.png) no-repeat,
+    url(../img/ilustra-02.png) right bottom no-repeat;
+}
+
+.header__center {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2%;
+}
+
+.header__find--block {
+  color: var(--text-color-span);
+  text-transform: uppercase;
+  display: block;
+  font-size: var(--fs-16);
+  font-weight: var(--fw-500);
+  line-height: 2.56rem;
+}
+
+.header__text {
+  font-size: var(--fs-48);
+  font-weight: var(--fw-700);
+  line-height: 6rem;
+}
+
+.header__text span {
+  color: var(--text-color-secondary);
+}
+
+.header__search {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+
+.header__search__block {
+  display: flex;
+  gap: 2.4rem;
+  padding: 2.5rem;
+}
+
+.header__input1,
+.header__input2 {
+  position: relative;
+}
+
+.header__input1 i,
+.header__input2 i {
+  position: absolute;
+  left: 1.1rem;
+  top: 1.2rem;
+  color: var(--text-color-span);
+}
+
+.header__search__block input[type="text"] {
+  padding: 1.2rem 0.8rem;
+  padding-inline: 4rem;
+  border: 1px solid var(--bg-colorBox-input);
+  background-color: transparent;
+  border-radius: 0.5rem;
+}
+
+.header__search__block input[list^="city-"] {
+  padding: 1.2rem 1.4rem;
+  border: 1px solid var(--bg-colorBox-input);
+  background-color: transparent;
+  border-radius: 0.5rem;
+  padding-inline: 4rem;
+}
+
+.header__search__block input::placeholder {
+  color: var(--text-color-tertiary);
+}
+
+/* MAIN */
+
+.section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section__blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13rem 0 6rem;
+}
+
+.section__text {
+  font-size: var(--fs-32);
+  font-weight: var(--fw-700);
+}
+
+.section__btns a + a {
+  margin: 0 1.5rem;
+}
+
+.section__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.section__card {
+  max-width: 384px;
+  margin-bottom: 4rem;
+  border: 1px solid var(--bg-colorBox-input);
+  border-radius: 0.5rem;
+  transition: 0.4s ease all;
+}
+
+.section__card:hover {
+  scale: 0.9;
+  cursor: pointer;
+}
+
+.section__card img {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  display: inline-block;
+}
+
+.section__card__infos {
+  padding: 1.5rem;
+}
+
+.section__card__infos .section__subtitle {
+  font-size: var(--fs-20);
+  font-weight: var(--fw-700);
+}
+
+.section__card__infos > p {
+  padding: 2rem 0 1.5rem;
+  color: var(--text-color-tertiary);
+  line-height: 2.56rem;
+}
+
+.section__local {
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.section__local i {
+  color: var(--text-color-span);
+}
+
+.section__local p {
+  font-weight: var(--fw-400);
+}
